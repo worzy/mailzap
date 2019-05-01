@@ -1,0 +1,28 @@
+{
+    "name": "worzy/mailzap",
+    "description": "Package for mass sending email through various providers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gareth Drew",
+            "email": "hello@garethdrew.me"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "worzy\\mailzap\\MailzapServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Worzy\\Mailzap\\": "src/"
+        }
+    }
+}
